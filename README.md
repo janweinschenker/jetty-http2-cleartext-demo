@@ -1,6 +1,6 @@
 # Spring Boot example for http/2 cleartext
 
-This small Spring Boot application is showcasing, how to setup an application to serve
+This small Spring Boot application is showcasing how to setup an application to serve
 both HTTP/1.1 and unencrypted HTTP/2 cleartext, known as **h2c** over the same port.
 
 ```bash
