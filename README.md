@@ -7,9 +7,15 @@ both HTTP/1.1 and unencrypted HTTP/2 cleartext, known as **h2c** over the same p
 $ mvn clean package spring-boot:run
 ```
 
+Then, install an http/2 test tool, like [nghttp](https://nghttp2.org/documentation/package_README.html) for example.
+
+Use it like this:
+
 ```bash
 $ nghttp -vua http://localhost:8080/hello-world
 ```
+
+As you can see, nghttp performs a protocol upgrade from http/1.1 to h2c (http/2 cleartex), the unencrypted variant of http/2.
 
 ```
 [  0.002] Connected
